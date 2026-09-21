@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realizar Pedido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">✦ Tu Tienda de Ropa</div>
+    <div class="social-icons">
+      <a class="whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-1.746-.874-2.892-1.56-4.043-3.539-.306-.526.306-.489.876-1.629.098-.198.049-.372-.05-.521-.099-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.01-.371-.012-.57-.012-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.05 3.13 4.972 4.267 2.921 1.137 2.921.759 3.469.712.545-.048 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.271-.198-.57-.347z"/><path d="M12.002 2.001c-5.514 0-9.985 4.47-9.985 9.984 0 1.855.507 3.588 1.388 5.076L2 22l5.09-1.376a9.928 9.928 0 0 0 4.912 1.293h.004c5.514 0 9.984-4.47 9.984-9.985 0-2.666-1.036-5.171-2.92-7.055a9.925 9.925 0 0 0-7.068-2.876zm0 18.03h-.003a8.34 8.34 0 0 1-4.26-1.169l-.305-.183-3.02.816.807-2.944-.198-.302a8.32 8.32 0 0 1-1.28-4.408c0-4.605 3.75-8.354 8.363-8.354 2.233 0 4.33.87 5.912 2.451a8.301 8.301 0 0 1 2.448 5.909c0 4.606-3.752 8.184-8.464 8.184z"/></svg>
+      </a>
+      <a class="instagram" href="https://instagram.com/tutienda" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+      <a class="facebook" href="https://facebook.com/tutienda" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.878h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="form-wrapper">
+  <a class="back-link" href="index.html">&larr; Volver al catálogo</a>
+
+  <div class="form-card">
+
+    <div class="order-summary">
+      <img id="summaryImg" src="" alt="Producto">
+      <div>
+        <div class="name" id="summaryName">Producto</div>
+        <div class="price" id="summaryPrice"></div>
+      </div>
+    </div>
+
+    <h2>Datos de envío</h2>
+
+    <form id="orderForm">
+      <div class="field">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="field">
+        <label for="telefono">Teléfono de contacto</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="field">
+        <label>Tipo de vivienda</label>
+        <div class="radio-group">
+          <label><input type="radio" name="tipoVivienda" value="Casa" required> Casa</label>
+          <label><input type="radio" name="tipoVivienda" value="Apartamento" required> Apartamento</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Calle, número, barrio, ciudad" required>
+      </div>
+
+      <div class="field" id="apartamentoField">
+        <label for="numeroApartamento">Número de apartamento</label>
+        <input type="text" id="numeroApartamento" name="numeroApartamento" placeholder="Ej: Torre 2, Apto 304">
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar pedido por WhatsApp</button>
+    </form>
+
+    <div class="confirmation" id="confirmation">
+      <p>¡Gracias! Tu pedido se ha preparado. Si no se abrió WhatsApp automáticamente, haz clic <a id="waLink" href="#" target="_blank" rel="noopener">aquí</a>.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Tu Tienda de Ropa. Todos los derechos reservados.
+</footer>
+
+<script>
+  // Número de WhatsApp del negocio en formato internacional sin "+" ni espacios (ej: 57300xxxxxxx)
+  const NUMERO_WHATSAPP = "573000000000";
+
+  const params = new URLSearchParams(window.location.search);
+  const producto = params.get("producto") || "";
+  const precio = params.get("precio") || "";
+  const imagen = params.get("imagen") || "";
+
+  if (producto) {
+    document.getElementById("summaryName").textContent = producto;
+    document.getElementById("summaryPrice").textContent = precio;
+    if (imagen) {
+      document.getElementById("summaryImg").src = imagen;
+    }
+    document.title = "Pedido - " + producto;
+  } else {
+    document.querySelector(".order-summary").style.display = "none";
+    document.title = "Realizar Pedido";
+  }
+
+  const radios = document.querySelectorAll('input[name="tipoVivienda"]');
+  const apartamentoField = document.getElementById("apartamentoField");
+  const numeroApartamentoInput = document.getElementById("numeroApartamento");
+
+  radios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      if (radio.value === "Apartamento" && radio.checked) {
+        apartamentoField.style.display = "block";
+        numeroApartamentoInput.required = true;
+      } else if (radio.checked) {
+        apartamentoField.style.display = "none";
+        numeroApartamentoInput.required = false;
+        numeroApartamentoInput.value = "";
+      }
+    });
+  });
+
+  document.getElementById("orderForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const tipoVivienda = document.querySelector('input[name="tipoVivienda"]:checked').value;
+    const direccion = document.getElementById("direccion").value.trim();
+    const numeroApartamento = numeroApartamentoInput.value.trim();
+
+    let mensaje = `Hola, quiero hacer un pedido:\n`;
+    if (producto) {
+      mensaje += `Producto: ${producto}\n`;
+      mensaje += `Precio: ${precio}\n`;
+    }
+    mensaje += `Nombre: ${nombre}\n`;
+    mensaje += `Teléfono: ${telefono}\n`;
+    mensaje += `Tipo de vivienda: ${tipoVivienda}\n`;
+    mensaje += `Dirección: ${direccion}\n`;
+    if (tipoVivienda === "Apartamento" && numeroApartamento) {
+      mensaje += `Número de apartamento: ${numeroApartamento}\n`;
+    }
+
+    const url = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURIComponent(mensaje)}`;
+
+    document.getElementById("waLink").href = url;
+    document.getElementById("confirmation").classList.add("visible");
+    document.getElementById("orderForm").style.display = "none";
+
+    window.open(url, "_blank");
+  });
+</script>
+
+</body>
+</html>
