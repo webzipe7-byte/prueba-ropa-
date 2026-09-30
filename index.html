@@ -3,132 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo de Ropa</title>
+<title>Dress Up · Catálogo de Ropa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
 
 <header class="site-header">
   <div class="header-inner">
-    <div class="brand">✦ Tu Tienda de Ropa</div>
-    <div class="social-icons">
-      <!-- Reemplaza estos enlaces (#) por tus redes reales -->
-      <a class="whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-1.746-.874-2.892-1.56-4.043-3.539-.306-.526.306-.489.876-1.629.098-.198.049-.372-.05-.521-.099-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.01-.371-.012-.57-.012-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.05 3.13 4.972 4.267 2.921 1.137 2.921.759 3.469.712.545-.048 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.271-.198-.57-.347z"/><path d="M12.002 2.001c-5.514 0-9.985 4.47-9.985 9.984 0 1.855.507 3.588 1.388 5.076L2 22l5.09-1.376a9.928 9.928 0 0 0 4.912 1.293h.004c5.514 0 9.984-4.47 9.984-9.985 0-2.666-1.036-5.171-2.92-7.055a9.925 9.925 0 0 0-7.068-2.876zm0 18.03h-.003a8.34 8.34 0 0 1-4.26-1.169l-.305-.183-3.02.816.807-2.944-.198-.302a8.32 8.32 0 0 1-1.28-4.408c0-4.605 3.75-8.354 8.363-8.354 2.233 0 4.33.87 5.912 2.451a8.301 8.301 0 0 1 2.448 5.909c0 4.606-3.752 8.184-8.464 8.184z"/></svg>
-      </a>
-      <a class="instagram" href="https://instagram.com/tutienda" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-      </a>
-      <a class="facebook" href="https://facebook.com/tutienda" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.878h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
-      </a>
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 2l6 3.5-2.2 4.2-2.3-1.1V22H6.5V8.6L4.2 9.7 2 5.5 8 2c.6 1.7 2.1 2.8 4 2.8s3.4-1.1 4-2.8z"/></svg>
+      Dress Up
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top">Inicio</a>
+      <a href="#coleccion" data-filter-link="todo">Todo</a>
+      <a href="#coleccion" data-filter-link="nuevo">Novedades</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" id="searchToggle" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.39-1.42 1.42-5.39-5.39A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+        <span class="label">Buscar</span>
+      </button>
+      <button type="button" class="js-open-cart" aria-label="Carrito">
+        <svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l.9 2H22l-3.4 8.4c-.3.8-1.1 1.3-1.9 1.3H8.1l-.9 1.6-.1.2c0 .3.2.5.5.5H19v2H7.5A2.5 2.5 0 0 1 5.3 14.3l1.4-2.5L3 4H1V2zm5.2 4 2.4 5.7h8.1L19 6H6.2z"/></svg>
+        <span class="label">Carrito</span>
+        <span class="cart-count" data-count="0">0</span>
+      </button>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+      </button>
     </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <input type="search" id="searchInput" placeholder="Busca una prenda, ej: Modelo 3" aria-label="Buscar prenda">
   </div>
 </header>
 
 <section class="hero">
-  <span class="hero-eyebrow">Nueva colección</span>
-  <h1>Viste tu mejor versión</h1>
-  <p>Prendas de calidad a los mejores precios. Elige la tuya y haz tu pedido en segundos.</p>
-  <div class="hero-chips">
-    <span class="chip">🚚 Envíos a todo el país</span>
-    <span class="chip">💬 Pedidos por WhatsApp</span>
-    <span class="chip">✨ Precios increíbles</span>
+  <div class="hero-image">
+    <img src="modelo de ropa 3.png" alt="Modelo con blazer de cuadros y vestido floral">
   </div>
-  <a class="hero-cta" href="pedido.html">Pedir</a>
+  <div class="hero-copy">
+    <h1>¡Mira las <span class="hl">novedades</span>! <span class="hl">¡Rápido!</span> El tiempo se acaba, <span class="hl">consigue la tuya lo más pronto posible.</span></h1>
+    <a class="btn-dark" href="#coleccion" data-filter-link="nuevo">Comprar ya</a>
+  </div>
 </section>
 
-<main class="catalog">
+<section class="featured" id="coleccion">
+  <svg class="wave" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#6b7f8f" d="M0,90 C360,20 720,-10 1080,25 C1260,42 1380,70 1440,85 L1440,110 L0,110 Z"/>
+  </svg>
 
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelo de ropa 1.png" alt="Modelo de ropa 1">
+  <div class="featured-body">
+    <div class="section-head">
+      <h2>Colecciones destacadas</h2>
+      <button type="button" class="cart-link js-open-cart">
+        <svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l.9 2H22l-3.4 8.4c-.3.8-1.1 1.3-1.9 1.3H8.1l-.9 1.6-.1.2c0 .3.2.5.5.5H19v2H7.5A2.5 2.5 0 0 1 5.3 14.3l1.4-2.5L3 4H1V2zm5.2 4 2.4 5.7h8.1L19 6H6.2z"/></svg>
+        Carrito
+      </button>
     </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 1</div>
-      <div class="product-price">$4.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%201&precio=%244.000%20COP&imagen=modelo%20de%20ropa%201.png">Pedir ahora</a>
-    </div>
-  </article>
 
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelo de ropa 2.png" alt="Modelo de ropa 2">
+    <div class="filters">
+      <button type="button" class="filter-btn active" data-filter="todo">Todo</button>
+      <button type="button" class="filter-btn" data-filter="nuevo">Novedades</button>
     </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 2</div>
-      <div class="product-price">$10.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%202&precio=%2410.000%20COP&imagen=modelo%20de%20ropa%202.png">Pedir ahora</a>
-    </div>
-  </article>
 
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelo de ropa 3.png" alt="Modelo de ropa 3">
-    </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 3</div>
-      <div class="product-price">$100.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%203&precio=%24100.000%20COP&imagen=modelo%20de%20ropa%203.png">Pedir ahora</a>
-    </div>
-  </article>
+    <!-- Para agregar una prenda copia un <article> y cambia data-nombre, data-precio (solo números), data-imagen y data-nuevo -->
+    <main class="catalog" id="catalog">
 
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelos de ropa 4.png" alt="Modelo de ropa 4">
-    </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 4</div>
-      <div class="product-price">$8.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%204&precio=%248.000%20COP&imagen=modelos%20de%20ropa%204.png">Pedir ahora</a>
-    </div>
-  </article>
+      <article class="product-card" data-nombre="Modelo 1" data-precio="4000" data-imagen="modelo de ropa 1.png" data-nuevo="true"></article>
+      <article class="product-card" data-nombre="Modelo 2" data-precio="10000" data-imagen="modelo de ropa 2.png"></article>
+      <article class="product-card" data-nombre="Modelo 3" data-precio="100000" data-imagen="modelo de ropa 3.png" data-nuevo="true"></article>
+      <article class="product-card" data-nombre="Modelo 4" data-precio="8000" data-imagen="modelos de ropa 4.png"></article>
+      <article class="product-card" data-nombre="Modelo 5" data-precio="9000" data-imagen="modelos de ropa 5.png"></article>
+      <article class="product-card" data-nombre="Modelo 6" data-precio="5000" data-imagen="modelo de ropa 6.png"></article>
+      <article class="product-card" data-nombre="Modelo 7" data-precio="4000" data-imagen="modelo de ropa 7.png" data-nuevo="true"></article>
 
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelos de ropa 5.png" alt="Modelo de ropa 5">
-    </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 5</div>
-      <div class="product-price">$9.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%205&precio=%249.000%20COP&imagen=modelos%20de%20ropa%205.png">Pedir ahora</a>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelo de ropa 6.png" alt="Modelo de ropa 6">
-    </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 6</div>
-      <div class="product-price">$5.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%206&precio=%245.000%20COP&imagen=modelo%20de%20ropa%206.png">Pedir ahora</a>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="product-image">
-      <img src="modelo de ropa 7.png" alt="Modelo de ropa 7">
-    </div>
-    <div class="product-info">
-      <div class="product-name">Modelo 7</div>
-      <div class="product-price">$4.000 COP</div>
-      <a class="order-btn" href="pedido.html?producto=Modelo%207&precio=%244.000%20COP&imagen=modelo%20de%20ropa%207.png">Pedir ahora</a>
-    </div>
-  </article>
-
-</main>
+    </main>
+    <p class="empty-msg" id="emptyMsg">No encontramos prendas con ese nombre.</p>
+  </div>
+</section>
 
 <footer>
-  &copy; 2026 Tu Tienda de Ropa. Todos los derechos reservados.
+  &copy; 2026 Dress Up. Todos los derechos reservados. · <a href="contacto.html">Contacto y redes</a>
 </footer>
 
-<a class="float-whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noopener" title="Escríbenos por WhatsApp" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-1.746-.874-2.892-1.56-4.043-3.539-.306-.526.306-.489.876-1.629.098-.198.049-.372-.05-.521-.099-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.01-.371-.012-.57-.012-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.05 3.13 4.972 4.267 2.921 1.137 2.921.759 3.469.712.545-.048 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.271-.198-.57-.347z"/><path d="M12.002 2.001c-5.514 0-9.985 4.47-9.985 9.984 0 1.855.507 3.588 1.388 5.076L2 22l5.09-1.376a9.928 9.928 0 0 0 4.912 1.293h.004c5.514 0 9.984-4.47 9.984-9.985 0-2.666-1.036-5.171-2.92-7.055a9.925 9.925 0 0 0-7.068-2.876zm0 18.03h-.003a8.34 8.34 0 0 1-4.26-1.169l-.305-.183-3.02.816.807-2.944-.198-.302a8.32 8.32 0 0 1-1.28-4.408c0-4.605 3.75-8.354 8.363-8.354 2.233 0 4.33.87 5.912 2.451a8.301 8.301 0 0 1 2.448 5.909c0 4.606-3.752 8.184-8.464 8.184z"/></svg>
-</a>
+<!-- Carrito -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+  <div class="cart-head">
+    <h3>Tu carrito</h3>
+    <button type="button" class="cart-close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0 COP</span></div>
+    <button type="button" class="checkout-btn" id="checkoutBtn">Finalizar pedido</button>
+  </div>
+</aside>
 
+<div class="toast" id="toast">Agregado al carrito</div>
+
+<script src="script.js"></script>
 </body>
 </html>
